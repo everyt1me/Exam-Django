@@ -12,8 +12,10 @@ def index(request):
 def products(request):
     return render(request, 'pages/products.html')
 
-def product_details(request):
-    return render(request, 'pages/product_details.html')
+def product_details(request, id):
+    good = get_object_or_404(Good, pk=id)
+    context = {'Good': Good}
+    return render(request, 'pages/product_details.html', context=context)
 
 def special_offer(request):
     return render(request, 'pages/special_offer.html')

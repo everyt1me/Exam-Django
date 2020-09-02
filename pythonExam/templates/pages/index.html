@@ -578,7 +578,7 @@
                         {% for item in item %}
                           <li class="span3">
                             <div class="thumbnail">
-                              <a  href="{% url 'product details' %}"><img src="{{item.image}}" alt=""/></a>
+                              <a  href="{% url 'product details' item.id %}"><img src="{{item.image.url}}" alt=""/></a>
                               <div class="caption">
                                 <h5>{{ item.name }}</h5>
                                 <p> 

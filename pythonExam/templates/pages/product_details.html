@@ -181,12 +181,12 @@
 			</div>
 			</div>
 			<div class="span6">
-				<h3>Fujifilm FinePix S2950 Digital Camera  </h3>
+				<h3>{{good.name}}</h3>
 				<small>- (14MP, 18x Optical Zoom) 3-inch LCD</small>
 				<hr class="soft"/>
 				<form class="form-horizontal qtyFrm">
 				  <div class="control-group">
-					<label class="control-label"><span>$222.00</span></label>
+					<label class="control-label"><span>$ {{good.price}}</span></label>
 					<div class="controls">
 					<input type="number" class="span1" placeholder="Qty."/>
 					  <button type="submit" class="btn btn-large btn-primary pull-right"> Add to cart <i class=" icon-shopping-cart"></i></button>
@@ -229,7 +229,8 @@
             </ul>
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="home">
-			  <h4>Product Information</h4>
+				<h4>Product Information</h4>
+								{{good.description}}
                 <table class="table table-bordered">
 				<tbody>
 				<tr class="techSpecRow"><th colspan="2">Product Details</th></tr>

@@ -8,8 +8,9 @@ class Good(models.Model):
     description = models.TextField("Опис товару", max_length=500)
     image = models.ImageField(upload_to='photos/%Y/%m/%d/')
 
-    def __str__(self):
-        return self.name
-    class Meta:
-        verbose_name = "Додати товар у магазин"
-        verbose_name_plural = "Додати товар у магазин"
+def __str__(self):
+    return self.name
+
+class Meta:
+    verbose_name = "Додати товар у магазин"
+    verbose_name_plural = "Додати товар у магазин"
